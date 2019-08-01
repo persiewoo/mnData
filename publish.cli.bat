@@ -1,7 +1,10 @@
-@echo ===============================
-@echo 请稍等，数值文件的发布功能随后就到
-@echo ===============================
+@echo off
+echo ===============================
+echo ���Ե�, excel to client lua
+echo ===============================
 
-echo off
+set PATH=%PATH%;%~dp0..\mnSrv\www\php7
+
+php %~dp0..\mnSrv\admin\excel_to_lua.php
+
 pause
-echo on
